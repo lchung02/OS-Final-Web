@@ -1,0 +1,224 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.opener{
+  background-color: #a7aac3; /* purple background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#outertrim{
+  width: 1100px;
+  height: 738px;
+  background-color: #D5D5D5; /* Gray background (iPad trim) */ 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  border-radius: 60px; /* Rounded corners */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  position: relative;
+}
+
+#innertrim{
+  width: 1090px; 
+  height: 728px; 
+  background-color: #000000; /* Black outline */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 60px;
+  position: relative; 
+}
+
+#homebutton{
+  position: absolute;
+  top: 50%;
+  right: 6.5px;
+  transform: translateY(-50%);
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  border: 3px solid gray;
+  background-color: transparent;
+}
+
+#camera{
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border: 2.5px solid gray;
+  border-radius: 50%;
+  background-color: #005249;
+}
+
+#screen{
+  width: 1000px;
+  height: 680px;
+  background-color: #FFFFFF; /* White screen */
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  border-radius: 35px; /* Rounded corners */
+  position: relative;
+}
+
+#bigbox{
+  width: 450px;
+  height: 440px;
+  background-color: #a7dff1;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 80px;
+  left: 12%;
+  transform: translateX(-50);
+  border-radius: 35px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+#insidebox{
+  width: 450px;
+  height: 345px;
+  background-color: #65c6e7;
+  display: block; 
+  justify-content: flex-start; 
+  align-items: flex-start; 
+  position: absolute;
+  bottom: 95px;
+  transform: translateX(-50);
+  border-radius: 35px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;  
+  overflow: auto; 
+  padding: 20px; 
+}
+
+#insidebox h1{
+  margin-top: 0;  
+  text-align: center;
+  margin-bottom: 10px;  
+}
+
+#insidebox p{
+  text-align: left;  
+  line-height: 1.6;  
+  margin-top: 0;  
+  font-size: 14px;  
+}
+
+#topboxleft{
+  width: 175px;
+  height: 175px;
+  background-color: #a7dff1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 160px;
+  right: 240px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+#topboxright{
+  width: 175px;
+  height: 175px;
+  background-color: #a7dff1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 160px;
+  right: 50px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+#bottombox{
+  width: 365px;
+  height: 255px;
+  background-color: #a7dff1;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 80px;
+  left: 58.5%;
+  transform: translateX(-50);
+  border-radius: 35px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+#timetext{
+  position: absolute;
+  left: 25px;
+  top: 10px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+#maintitle{
+  position: absolute;
+  top: 65px;
+  left: 70px;
+  font-size: 36px;
+  font-family: Arial, sans-serif;
+}
+
+#iconContainer{
+  position: absolute;    
+  left: 20px;          
+  top: 31%;           
+  display: flex;          
+  flex-direction: column; 
+  gap: 20px;             
+  z-index: 10;           
+}
+
+#homeicon,
+#mailicon,
+#notesicon,
+#timeicon,
+#settingsicon{
+  width: 35px;
+  height: auto;
+  object-fit: contain;
+}
+
+#ipadicon{ /* battery wifi */
+  width: 120px;
+  right: 25px;
+  top: 8px;
+  position: absolute;
+  height: auto; 
+  object-fit: contain;
+}
+
+#catpics{
+  width: 155px; 
+  height: auto;
+  object-fit: contain;
+  border-radius: 25px;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+  <meta charset = "utf-8">
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+  <title>Cat Lover Central</title>
+  <link href = "style.css" rel = "stylesheet" type = "text/css" />
+</head>
+
+<body class="opener"> <!purple>
+  <div id="outertrim"> <!gray>
+    <div id="innertrim"> <!black>
+      <div id="homebutton"> <!homebutton>
+      </div>
+      <div id="camera"> <!camera>
+      </div>
+      <div id="screen"> <!white>
+        <img src = "images/ipad_icons.png" alt = "ipad icons" id = "ipadicon"> 
+        <div id="iconContainer">
+          <img src = "images/home.png" alt = "home" id = "homeicon">
+          <img src = "images/notes.png" alt = "notes" id = "notesicon">
+          <img src = "images/time.png" alt = "time" id = "timeicon">
+          <img src = "images/mail.png" alt = "mail" id = "mailicon">
+          <img src = "images/settings.png" alt = "settings" id = "settingsicon">
+        </div>
+          <div id = "bigbox"> <!big box>
+            <div id = "insidebox">
+              <h1>Meet the Cats!</h1>
+              <p>I have 2 cats, each with their own personality. Cleo prefers to keep to herself, while Kenji is always lurking nearby, curious about whatever we’re doing. He’s very goofy at times and loves to chase Cleo around the house (even if that means he gets beat up). Cleo loves to be brushed and will yell at you the moment you step through the door, leading you to her little house waiting to be groomed. They might not be the most affectionate, but there’s something about their presence that makes the house feel like home.
+              </p>
+            </div>
+            </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br><br/><br/><br/><br/><br/> <! 17 breaks makes words visible under the dark blue box >
+            <br/>Cleo (she/her) 7 y.o. Green eyes, round build, 5 apples long<br/>Birthday: 12/6/2017
+            <br/><br/> Kenji (he/him) 6 y.o. Orange eyes, slim build, 7 apples long<br/> Birthday: 3/12/2018
+          </div>
+          <div id = "bottombox"> <!bottom box>
+            <a id="downloadLink" href="#" download style="color: #00008B; font-size: 18px; text-decoration: none;"> <u>Download Cute Cat Photos</u></a>
+          </div> 
+          <div id = "topboxleft"> <!top left box>
+            <img src = "images/cleo.png" alt = "cleo" id = "catpics">
+          </div>
+          <div id = "topboxright"> <!top right box>
+            <img src = "images/kenji.png" alt = "kenji" id = "catpics">
+          </div>
+        <div id="timetext">
+        <b>8:30 AM &#160; Mon Dec 9</b>
+        </div>
+        <div id = "maintitle">
+        <b> Cat Lover Central  🐾 </b>
+        </div>
+       </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js">
+    document.getElementById('downloadLink').addEventListener('click', function(event) {
+        event.preventDefault(); 
+      
+        var link = document.createElement('a');
+        link.href = '/secret/cutecatphotos.zip';  // file path
+        link.download = 'cutecatphotos.zip';  
+        link.style.display = 'none';  // hide  link element
+
+        document.body.appendChild(link);
+
+        // trigger click event
+        link.click();
+
+        // remove link after download is triggered
+        document.body.removeChild(link);
+    });
+
+  </script>
+  
+</body>
+
+</html>
